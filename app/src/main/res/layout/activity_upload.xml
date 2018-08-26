@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/img_FotografYukle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_Aciklama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_green_dark"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edt_Aciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Görsel Bilgisi Gir"
+        app:layout_constraintBottom_toTopOf="@+id/btn_FotografYukle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_FotografYukle"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_FotografYukle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:layout_marginStart="37dp"
+        android:onClick="calistir_fotografyukle"
+        android:text="Fotoğraf Yükle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edt_Aciklama"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Aciklama"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
